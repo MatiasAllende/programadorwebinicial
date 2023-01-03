@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark p-3" id="menu">
+    <nav class="navbar navbar-expand-lg bg-dark p-3 fixed-top scroll_section" id="menu">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <span class="text-danger fs-5 fw-bold">Witshell</span>
@@ -26,75 +26,93 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="Witshell.html">Inicio</a>
+                        <a class="nav-link active " aria-current="page" href="index.html">Inicio</a>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#historia">Historia</a>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#Nosotros">Nosotros</a>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#conocenos">Conocenos</a>
                 </ul>
             </div>
         </div>
     </nav>
-    <section>
-        <div class="container w-50 m-auto text-center" id="dibujos">
-            <h1 class=" mt-2 mb-2 fs-2">El mejor lugar <span class="text-danger ">para tus dibujos</span>.</h1>
-            <p class="fs-4 ">Poniendonos siempre del lado del artista y de los miles de usuarios de nuestra plataforma.
+
+    <!--========================================================== -->
+    <!-- SECCION DE HISTORIA-->
+    <!--========================================================== -->
+
+    <div id="historia" class="row align-items-center py-4 scroll_section">
+        <div class="col-lg-2 col-md-3 offset-lg2 d-none d-sm-block">
+            <img src="img/historia1.jpg" alt="historia 1" class="img-fluid mt-2 mx-3">
+        </div>
+        <div class="col-lg-4 col-md6 mt-4 mt-sm-0">
+            <h2 class="text-danger fw-bold">Historia</h2>
+            <p class="fs-5">
+                Nuestra plataforma nació en 2019 en base a la amplia demanda de los artistas digitales. Somos un equipo
+                grande encargado de brindar <span class="text-danger"> el mejor servicio posible. </span>
             </p>
-        </div>
-        <div class="mt-2 text-center">
-            <img id="img-equipo" src="./img/collage (1).png" alt="collage">
+
         </div>
 
-        <!-- <section class="w-100">
-            <div class="row w-75 mx-auto" id="servicios-fila-1">
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-                    <img src="./img/lupa.png" alt="desarrollo" width="180" height="160">
+    </div>
 
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Explora y conoce. </h3>
-                        <p class="px-4 text-danger">Sumérgete y conoce nuevos artistas.</p>
+    <!--========================================================== -->
+    <!-- SECCION DE NOSOTROS-->
+    <!--========================================================== -->
+
+
+    <div id="Nosotros" class="row align-items-stretch my-3 staff py-4 scroll_section">
+        <div class="col-lg-8 offset-lg-2">
+            <h2 class="text-danger fw-bold">Responsables del sitio</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger ">Joaquin Aldabe</h5>
+                            <p class="card-text">CEO y lider del proyecto. Inventor de la idea y principal autor del sitio.</p>
+                        </div>
                     </div>
-
                 </div>
-
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-                    <img src="./img/idea.png" alt="concepto" width="180" height="160">
-
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Crea tus propios dibujos </h3>
-                        <p class="px-4 text-danger">Abre tu mente y dibuja lo que tienes dentro de ella.</p>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Francisco Moreira</h5>
+                            <p class="card-text">Co-lider del proyecto y encargado del area de programación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Federico Coppoler</h5>
+                            <p class="card-text">Ingeniero en sistemas lider, encargado del mantenimiento de la plataforma.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-                    <img src="./img/subida.png" alt="comunicaciones" width="180" height="160">
+    <!--========================================================== -->
+    <!-- SECCION DE VISITANOS-->
+    <!--========================================================== -->
 
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Sube tus imagenes</h3>
-                        <p class="px-4 text-danger">Sube tus creaciones para compartirlas con los demas.</p>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-                    <img src="./img/cuaderno.png" alt="seo" width="180" height="160">
-
-                    <div>
-                        <h3 class="fs-5 mt-4 px-4 pb-1">Califica otros trabajos </h3>
-                        <p class="px-4 text-danger">Comenta y vota dibujos de otros artistas.</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <div id="local" class="border-top border-2">
-            <div class="mapa"> </div>
-            <div>
-                <div class="wrapper-local">
-                    <h2>Ubicado en <span class="text-danger"> Palermo, Buenos Aires</span></h2>
-                    <p class="fs-5 text-body">Cercanas al Parque Las Heras entre otros puntos de interes, nuestras
-                        oficinas poseen las ultimas tecnologias para brindar <span class="text-danger"> el mejor servicio posible </span></p>
-                </div>
+    <div id="conocenos" class="row py-4 scroll_section">
+        <div class="col-md-4 offset-md-2">
+            <h2 class="text-danger fw-bold">Visitanos</h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.34003825420106!2d-58.43163124170112!3d-34.56771614763579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5bc89df2455%3A0x5cb320f92eaa9f43!2sMigueletes%20557%2C%20C1426BUC%20CABA!5e0!3m2!1ses!2sar!4v1672772798329!5m2!1ses!2sar"
+                ></iframe>
             </div>
         </div>
+    </div>
 
+    
+    
 </body>
 
 </html>

@@ -45,28 +45,6 @@ body{
     width:50%;
 }
 
-
-#local {
-    margin-top:50px;
-    background-color: #f3f3f3;
-    display:flex;
-    justify-content: center; 
-    padding-bottom: 300px; 
-}
-
-.mapa {
-    background: url(../img/mapa.png);
-    width:75%;
-    height:500px;
-}
-
-
-.wrapper-local {
-    width:50%;
-    margin-left:100px;
-    padding-top:150px;
-}
-
 .lista-novedades {
     margin: 0;
     padding: 0;
@@ -111,9 +89,10 @@ body{
 }
 
 .testimonios{
-    background-color: #dadada;
+    background-color: #f08585;
     padding-bottom: 4rem !important;
     color: black;
+    
 
 
 }
@@ -122,4 +101,22 @@ body{
 text-align: center;
 padding: 50px 20px;
 
+}
+
+.staff{
+    background: #efefef;
+}
+
+.mapa iframe{
+
+        width: 100%;
+        aspect-ratio: 1.2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll_section{
+    scroll-margin-top: 75px ;
 }

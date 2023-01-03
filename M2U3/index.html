@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="Witshell.html">Inicio</a>
+                        <a class="nav-link active " aria-current="page" href="index.html">Inicio</a>
 
                     </li>
                     <li class="nav-item">
@@ -91,6 +91,7 @@
     <!--========================================================== -->
     <!-- SECCION DE NOVEDADES-->
     <!--========================================================== -->
+    
     <div class="row my-3">
         <div id="novedades" class="col-md-5 offset-md-2 py-3">
 
@@ -109,7 +110,13 @@
                         Calificar
                 </a></li>
             </ul>
-            <div class="col-md-3 my-3">
+        </div>
+
+    <!--========================================================== -->
+    <!-- SECCION TESTIMONIOS-->
+    <!--========================================================== -->
+    
+            <div class="col-md-2 offset mt-3 my-3">
                 <div class="rounded py-5 testimonios">
                     <h2 class="text-center">Testimonios: </h2>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -156,10 +163,13 @@
                     </div>
                 </div>
             </div>
-
-
-        </div>
     </div>
+
+     
+    <!--========================================================== -->
+    <!-- MODAL DE NOVEDADES-->
+    <!--========================================================== -->
+    
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -214,30 +224,44 @@
         </div>
     </div>
 
-
-
     <!--========================================================== -->
     <!-- SECCION DE BOTON PARA REGISTRO-->
     <!--========================================================== -->
 
-    <div class="row">
-        <div class="col-sm-3 md-5 offset-md-2 py-3">
-            <div class="d-flex justify-content-center">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <h3>¿Que estas esperando?</h3>
-                    <p class="card-text fs-5">Has click aqui para <span class="text-danger">registrarte </span> y estar
-                        un paso mas cerca de conocer
-                        nuevos dibujos: </p>
-                    <a href="registro.html" class="btn btn-danger mb-3">Adelante! </a>
-                </div>
+    <div class="mx-auto col-md-4 mb-2 " id="contacto" style="width: 1250px;">
+        <h2 class="text-danger fw-bold mx-center">Regístrate</h2>
+        <form class=" row g-3">
+
+            <div class="row g-3 mx-6">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="tel" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="tel" placeholder="...">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class=" form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                    
+                  <div class="col-12">
+                    <a class="btn btn-danger" href="registro.html" role="button">Enviar</a>
+                  </div>
             </div>
-        </div>
+        </form>
     </div>
 
 
-
-    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
