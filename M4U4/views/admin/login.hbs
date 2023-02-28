@@ -1,0 +1,25 @@
+<div class= 'container' style="margin: 100px auto;">
+    <div class="row">
+        <div class="col">
+            <form action="/admin/login" method="post">
+                <div class="form-group">
+                    <label for="Usuario" class="mb-2" style="font-weight: bold">Usuario</label>
+                    <input type="text" class="form-control"
+                    id="usuario" aria-describedby="emailHelp"
+                    name="usuario">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="mt-2 mb-2 " style="font-weight: bold" >Password</label>
+                    <input type="password"
+                    class="form-control" id="password"
+                    name="password">
+                </div>
+                <button type="submit" class="btn btn-danger mt-3">Enviar
+                </button>
+            </form>
+            {{#if error}}
+            <p class="mt-2" style="font-size: large; font-weight:bold;">¡Usuario o contraseña incorrecto!</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

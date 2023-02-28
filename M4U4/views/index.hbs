@@ -1,0 +1,173 @@
+<!--========================================================== -->
+<!-- SLIDER DE IMAGENES-->
+<!--========================================================== -->
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images/slide1.jpg" class="d-block w-100" alt="slide1">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="/images/slide2.jpg" class="d-block w-100" alt="slide2">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="/images/slide3.jpg" class="d-block w-100" alt="slide3">
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Un lugar único donde ver millones de dibujos en la web:<span
+            class="text-danger"> Witshell </span></h1>
+    <p class="p-3 fs-4"><span class="text-danger fs-3"> Witshell, </span>La plataforma unica por excelencia donde
+        podras encontrar miles de dibujos y conocer nuevos artistas.
+    </p>
+</section>
+
+<!--========================================================== -->
+<!-- SECCION DE NOVEDADES-->
+<!--========================================================== -->
+
+<div class="row my-3">
+    <div id="novedades" class="col-md-5 offset-md-2 py-3">
+
+        <h3 class="text-danger">Funciones de nuestra plataforma:</h3>
+        <ul class="lista-novedades">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <img src="/images/lupa.png">
+                    Explorar
+                </a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalc"> <img src="/images/idea.png">
+                    Crear
+                </a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModals"> <img src="/images/subida.png">
+                    Subida de archivos
+                </a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalca"> <img src="/images/cuaderno.png">
+                    Calificar
+                </a></li>
+        </ul>
+    </div>
+
+    <!--========================================================== -->
+    <!-- SECCION TESTIMONIOS-->
+    <!--========================================================== -->
+
+    <div class="col-md-2 offset mt-3 my-3">
+        <div class="rounded py-5 testimonios">
+            <h2 class="text-center">Testimonios: </h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide1"></button>
+                    <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="1"
+                        class="active" aria-current="true" aria-label="Slide2"></button>
+                    <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="2"
+                        class="active" aria-current="true" aria-label="Slide3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <h5>La mejor pagina para artistas.</h5>
+                            <p>Pablo, Buenos Aires.</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>La web mas completa para dibujantes.</h5>
+                            <p>Marina, Santiago de Chile.</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Lo mejor de internet.</h5>
+                            <p>Esteban, Ciudad De Mexico.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--========================================================== -->
+<!-- MODAL DE NOVEDADES-->
+<!--========================================================== -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Explora</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-danger">Descubre nuevos artistas y dibujos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Crea</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-danger"> Usa tu imaginacion y crea tus propios dibujos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Sube</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-danger">Sube tus dibujos y compartelos con otros usuarios.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Califica</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-danger">Valora y da puntajes a otros trabajos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
