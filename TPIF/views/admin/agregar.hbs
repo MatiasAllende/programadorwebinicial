@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/stylesheets/agregar.css">
+    <title>Witshell</title>
+</head>
+
+<body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3">
+
+                    <h4>Agregar una novedad</h4>
+                    <form action="/admin/novedades/agregar" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subtitulo" name="subtitulo">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo">
+                            </textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"> Guardar
+                        </button>
+                    </form>
+                    {{#if error}}
+                    <p>{{message}}</p>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

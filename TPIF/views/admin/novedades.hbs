@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/stylesheets/novedades.css">
+    <link rel="shortcut icon" href="/images/favicon (1).ico">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="/">Witshell</a></div>
+            <ul class="links">
+                <li><a href="/">Inicio</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <section id="tabla" >
+        <div class="saludo">
+            <h4>¡Hola {{usuario}}!</h4>
+                <a href="/admin/novedades/agregar" class="btn btn-success">
+                    <i class="fa-sharp fa-solid fa-plus"> Nuevo </i></a>
+                <a href="/admin/login/logout" class="btn btn-danger"> CERRAR SESION <i
+                    class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    
+    <H2>Listado de novedades</H2>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Titulo</th>
+                            <th scope="col" class="text-center">Acciones </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each novedades}}
+                        <tr>
+                            <th scope="row">{{id}}</th>
+                            <td>{{titulo}}</td>
+                            <td class="text-center">
+                                <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"> <i class="fa fa-pencil"></i></a>
+                                <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witshell</title>
+    <link rel="shortcut icon" href="images/favicon (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+
+<body>
+    <body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="/">Witshell</a></div>
+            <ul class="links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/acercade">Acerca de</a></li>
+                <li><a href="/registro">Registrate</a></li>
+            </ul>
+            <a href="/registro" class="action_btn">Comienza ahora</a>
+        
+            </div>
+        </div>
+    </header>
+<div class="row my-3">
+    <div id="novedades" class="col-md-5 offset-md-2 py-3">
+        <h2 class="notitulo">Noticias</h2>
+        <ul class="lista-novedades">
+            {{#each novedades}}
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}"> <img src="/images/diario.png">
+                                    {{titulo}}
+                </a></li>
+            {{/each}}
+        </ul>
+    </div>
+    {{#each novedades}}
+<div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">{{titulo}}</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>{{subtitulo}}</h4>
+                <p class="text-danger">{{cuerpo}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+    <main>
+        <section id="hero">
+            <h1>Bienvenido a  Witshell</h1>
+            <p>La plataforma unica por excelencia donde
+                podrás <br> encontrar miles de dibujos y conocer nuevos artistas.
+            </p>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

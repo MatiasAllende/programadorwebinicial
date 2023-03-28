@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif ;
+}
+
+body{
+    height: 130vh;
+    background-color: white;
+    background-image: url('https://cdn.wallpapersafari.com/66/25/amCQz4.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container{
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.container h4{
+    color: white;
+    font-weight: bolder;
+}
+
+.container label{
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+
+}
+
+.container button{
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.container input{
+    font-weight: bolders;
+
+}
+.container textarea{
+    font-weight: bolder;
+}
